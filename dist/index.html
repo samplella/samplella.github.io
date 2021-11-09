@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="/src.f41506f2.css">
   <link rel="stylesheet" href="/app.d930d8e6.css">
 
+   
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3/dist/algoliasearchLite.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset-min.css" integrity="sha256-t2ATOGCtAIZNnzER679jwcFcKYfLlw01gli6F6oszk8=" crossorigin="anonymous">
+
   <title>algolia-sa-assignment</title>
 <script src="/src.f41506f2.js"></script><script src="/app.d930d8e6.js"></script></head>
 
@@ -22,8 +26,9 @@
         <img class="header__logo" src="/logo.4932377b.svg">
       </div>
       <div class="header__searchbox-container">
-        <div class="header__searchbox" id="searchbox"></div>
-        <div class="autocomplete">
+        <div class="header__searchbox" id="searchbox"></div> 
+        <div class="autocomplete" id="autocomplete">
+          
           <div class="autocomplete_container">
             <div class="autocomplete__hits" id="autocomplete-hits">
             </div>
@@ -33,6 +38,8 @@
     </div>
   </header>
 
+
+  <div class="searchbox-q" id="hits"></div>
   <div class="results">
   </div>
 

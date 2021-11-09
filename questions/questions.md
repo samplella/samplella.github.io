@@ -11,7 +11,17 @@ Sorry to give you the kind of feedback that I know you do not want to hear, but 
 Thanks,  
 Marissa  
 
+--- Response #1
 
+Hello Marissa,
+
+Thank you for reaching out to Algolia. 
+
+I'm a sorry to hear about your bad experience. I understand this could be frustrating. I would like to learn more about your specific use case and find a way to help you. Would you like to have a call to talk about this? 
+
+Let me know if you need anything else,
+
+Best regards, 
   
 --
 
@@ -26,8 +36,27 @@ Our website is an imdb like website where users can post reviews of coffee shops
   
 Please advise on how to fix this. Thanks.   
 
-  
+-- Response #2 
+
+Hello Carrie, 
+
+Thank you for reaching out. 
+
+I would like to help you further with your issue. 
+
+If I understand correctly users are uploading records with a lot of data that is not necessary for the search. 
+
+I would advice if it's possible to remove that extra metadata. One of the reasons of limitation is having very big chunks of text that is not really used which will match with a lot of irrelevant queries.
+
+Let me know if it's possible to apply this solution and it works correctly on your side.
+
+Best regards, 
+
+
+
 --
+
+
 
 *Question 3*:   
 
@@ -40,4 +69,20 @@ Hi, my website is not working and here's the error:
 ![error message](./error.png)  
   
 Can you fix it please?  
+
+
+
+-- Response #3
+
+Hello Marc,
+
+Thank you for your email. 
+
+Based on your image I can see that a library might be missing. Can you please review you have it installed?
+
+Here is the documentation about that library: https://www.npmjs.com/package/searchkit
+
+Let me know if you have any questions.
+
+Best regards, 
 

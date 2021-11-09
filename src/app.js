@@ -1,7 +1,51 @@
 import Autocomplete from './components/autocomplete';
 import { autocomplete } from '@algolia/autocomplete-js';
 import { createQuerySuggestionsPlugin } from '@algolia/autocomplete-plugin-query-suggestions';
+import algoliasearch from 'algoliasearch/lite';
+import instantsearch from 'instantsearch.js';
+import { searchBox, hits } from 'instantsearch.js/es/widgets';
 
+
+const appId = 'YC29CWFP9Y';
+const apiKey = 'da737da8bb556ef6e01f04538cc50f4d';
+const searchClient = algoliasearch(appId, apiKey);
+
+
+/*const querySuggestionsPlugin = createQuerySuggestionsPlugin({
+    searchClient,
+    indexName: 'test_PRODUCTS_query_suggestions',
+    getSearchParams( { state } ) {
+      return {
+        hitsPerPage: state.query ? 5 : 10,
+      };
+    },
+  });*/
+
+  /*autocomplete({
+    container: '.autocomplete',
+    plugins: [querySuggestionsPlugin],
+    openOnFocus: true
+
+    
+  });*/
+
+  /*const search = instantsearch({
+    indexName: 'test_PRODUCTS_query_suggestions',
+    searchClient,
+  });
+  
+  search.addWidgets([
+    
+    searchBox({
+      container: "#searchbox"
+    }),
+  
+    hits({
+      container: "#hits"
+    })
+  ]);
+  
+  search.start();*/
 
 class SpencerAndWilliamsSearch {
   constructor() {
@@ -10,7 +54,7 @@ class SpencerAndWilliamsSearch {
   }
 
   _initSearch() {
-    this.autocompleteDropdown = new Autocomplete();
+   this.autocompleteDropdown = new Autocomplete();
   }
 
   _registerEvents() {
@@ -30,17 +74,3 @@ class SpencerAndWilliamsSearch {
 const app = new SpencerAndWilliamsSearch();
 
 
-const appId = 'YC29CWFP9Y';
-const apiKey = 'da737da8bb556ef6e01f04538cc50f4d';
-const searchClient = algoliasearch(appId, apiKey);
-
-const querySuggestionsPlugin = createQuerySuggestionsPlugin({
-  searchClient,
-  indexName: 'instant_search_demo_query_suggestions',
-});
-
-autocomplete({
-  container: '#autocomplete',
-  plugins: [querySuggestionsPlugin],
-  openOnFocus: true,
-});

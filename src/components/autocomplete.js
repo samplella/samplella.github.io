@@ -7,6 +7,9 @@ import { hits, searchBox, configure } from 'instantsearch.js/es/widgets';
 // Autocomplete Template
 import autocompleteProductTemplate from '../templates/autocomplete-product';
 
+// Autocomplete Template
+import resultHitTemplate from '../templates/result-hit';
+
 /**
  * @class Autocomplete
  * @description Instant Search class to display content in the page's autocomplete
@@ -28,12 +31,12 @@ class Autocomplete {
    */
   _registerClient() {
     this._searchClient = algoliasearch(
-      'VYLEWMPKEZ',
-      '8940a18fde155adf3f74b0912c267aa4'
+      'YC29CWFP9Y',
+      'da737da8bb556ef6e01f04538cc50f4d'
     );
 
     this._searchInstance = instantsearch({
-      indexName: 'ecommerce-v2',
+      indexName: 'test_PRODUCTS_query_suggestions',
       searchClient: this._searchClient,
     });
   }
@@ -49,7 +52,7 @@ class Autocomplete {
         hitsPerPage: 3,
       }),
       searchBox({
-        container: '#searchbox',
+        container: '#searchbox'
       }),
       hits({
         container: '#autocomplete-hits',
