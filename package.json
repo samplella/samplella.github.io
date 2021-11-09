@@ -2,6 +2,7 @@
   "name": "algolia-sa-assignment",
   "version": "1.0.0",
   "private": true,
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "start": "parcel index.html --port 3000",

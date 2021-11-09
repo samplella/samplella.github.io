@@ -4,7 +4,7 @@ import { createQuerySuggestionsPlugin } from '@algolia/autocomplete-plugin-query
 import algoliasearch from 'algoliasearch/lite';
 import instantsearch from 'instantsearch.js';
 import { searchBox, hits } from 'instantsearch.js/es/widgets';
-<script type="module" src="app.js"></script>
+
 
 const appId = 'YC29CWFP9Y';
 const apiKey = 'da737da8bb556ef6e01f04538cc50f4d';
